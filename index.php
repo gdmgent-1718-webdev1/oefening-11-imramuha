@@ -1,4 +1,5 @@
 <?php
+                 
     $navigation = ['index' => 'Home', 'about' => 'Over ons', 'portfolio' => 'Portfolio', 'contact' => 'Contacteer ons'];
      
 ?>
@@ -14,10 +15,15 @@
 </head>
 <body>
     <div class="container">
+  
 
     <ul>
     <?php
         foreach ($navigation as $key => $value) {
+           
+        echo "<li> <a href=";
+        echo " {$key } => {$value} ";                                //put $key into li and $value into href;
+            
         
        
 
